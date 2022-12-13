@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../pythonProject/LuFeiPython/.idea/LuFeiPython.iml" filepath="$PROJECT_DIR$/../pythonProject/LuFeiPython/.idea/LuFeiPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pythonProject/PythonAlgorithm/.idea/PythonAlgorithm.iml" filepath="$PROJECT_DIR$/../pythonProject/PythonAlgorithm/.idea/PythonAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PythonGrammarClass.iml" filepath="$PROJECT_DIR$/.idea/PythonGrammarClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ScrapyTest/.idea/ScrapyTest.iml" filepath="$PROJECT_DIR$/../ScrapyTest/.idea/ScrapyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pythonBasicLearning/.idea/pythonBasicLearning.iml" filepath="$PROJECT_DIR$/../pythonBasicLearning/.idea/pythonBasicLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pythonProject/pythonProject/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/../pythonProject/pythonProject/.idea/pythonProject.iml" />
+    </modules>
+  </component>
+</project>
