@@ -1,0 +1,26 @@
+import os
+import time
+
+print("返回 path 的绝对路径")
+print(os.path.abspath('os模块.py'))
+print("获取文件名")
+print(os.path.basename('os模块.py'))
+print("返回 path 路径中的目录部分")
+print(os.path.dirname('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py'))
+print("判断 path 对应的文件是否存在，如果存在，返回 True；反之，返回 False")
+print(os.path.exists('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py'))
+print(os.path.exists('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块-false.py'))
+# exists() 和 lexists() 的区别在于，exists()会自动判断失效的文件链接（类似 Windows 系统中文件的快捷方式），而 lexists() 却不会
+print("判断路径是否存在，如果存在，则返回 True；反之，返回 False")
+print(os.path.lexists('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py'))
+print(os.path.lexists('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块-false.py'))
+print("把路径分割成 dirname 和 basename，返回一个元组")
+print(os.path.split('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py'))
+print("返回文件大小，如果文件不存在就返回错误")
+print(os.path.getsize('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py'))
+print("返回文件的创建时间（单位为秒，自 1970 年 1 月 1 日起（又称 Unix 时间））")
+print(os.path.getctime('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py'))
+print("转换正常格式时间")
+a = os.path.getctime('E:\PycharmProjects\pythonProject\LuFeiPython\内置模块\os模块.py')
+a = time.localtime(a)
+print(time.strftime('%Y-%m-%d %H:%M:%S', a))

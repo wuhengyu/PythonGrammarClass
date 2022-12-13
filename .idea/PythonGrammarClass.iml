@@ -4,10 +4,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="LuFeiPython" />
-    <orderEntry type="module" module-name="PythonAlgorithm" />
-    <orderEntry type="module" module-name="pythonProject" />
-    <orderEntry type="module" module-name="pythonBasicLearning" />
-    <orderEntry type="module" module-name="ScrapyTest" />
   </component>
 </module>
