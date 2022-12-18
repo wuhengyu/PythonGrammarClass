@@ -3,7 +3,7 @@
 # @Author  : Walter
 # @File    : 自定义列表迭代器.py
 # @License : (C)Copyright Walter
-# @Desc    :
+# @Desc    : 实现__next__和__iter__方法
 class listDemo:
     def __init__(self):
         self.__date = []
@@ -29,5 +29,10 @@ class listDemo:
 mylist = listDemo()
 mylist[0] = 1
 mylist[1] = 2
+# 迭代器__next__()方法
+# print(mylist.__next__())
+
 for i in mylist:
     print(i)
+
+print(iter(mylist))
