@@ -34,4 +34,3 @@ print('------------------------------')
 with FkResource('白骨精'):
     print('[with代码块] 异常之前的代码')
     raise Exception
-print('[with代码块] ~~~~~~~~异常之后的代码')
