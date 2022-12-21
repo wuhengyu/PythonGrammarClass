@@ -27,9 +27,10 @@ class CLanguage:
 
 
 # 调取说明文档的 2 种方式
-# print(CLanguage.name.__doc__)
+print(CLanguage.name.__doc__)
 help(CLanguage.name)
-clang = CLanguage("C语言中文网")
+
+clang = CLanguage("中文网")
 # 调用 getname() 方法
 print(clang.name)
 # 调用 setname() 方法
