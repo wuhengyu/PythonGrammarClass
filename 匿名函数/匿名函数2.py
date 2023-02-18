@@ -32,7 +32,15 @@ print(max(info, key=lambda k: info[k]))
 
 
 a = [10, 8, 15]
-print(sorted(a))
+# print(sorted(a))
 # [0, 1, 2] 为基础排序数据，key是排序规则
 # key是匿名函数，传入[0, 1, 2]，a[0], a[1], a[2]的值作为大小比较
 print(sorted(range(len(a)), key=lambda i: a[i]))
+
+# 两种方法
+b = [(11, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
+b.sort(key=lambda item: item[1])
+print(b)
+
+c = [(11, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
+print(sorted(c, key=lambda item: item[1]))
