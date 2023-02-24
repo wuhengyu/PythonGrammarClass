@@ -4,3 +4,15 @@
 # @File    : __init__函数.py
 # @License : (C)Copyright Walter
 # @Desc    :
+
+
+class TestInit():
+    def __init__(self):
+        print('init函数')
+
+    def func(self):
+        print('func函数')
+
+
+testInit = TestInit()
+testInit.func()
