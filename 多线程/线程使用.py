@@ -14,9 +14,9 @@ import time
 
 # 需要多线程运行的函数
 def fun(args):
-    print("我是线程%s" % args)
+    print("线程%s运行开始\n" % args)
     time.sleep(2)
-    print("线程%s运行结束" % args)
+    print("线程%s运行结束\n" % args)
 
 
 # 创建线程

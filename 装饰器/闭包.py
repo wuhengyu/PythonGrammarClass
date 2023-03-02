@@ -17,7 +17,7 @@ def outer(a):
         print(a)
         print(b)
     # 有返回
-    return inner # 实际并没有执行，返回了内存地址
+    return inner  # 实际并没有执行，返回了内存地址
 
 
 ou = outer(10)
