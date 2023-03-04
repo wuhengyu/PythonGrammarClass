@@ -12,12 +12,17 @@ import threading
 
 
 class MyThread(threading.Thread):
-    def __init__(self, n):
-        super(MyThread, self).__init__()  # 重构run函数必须要写
-        self.n = n
+    # 继承了父类Thread，并重写了它的__init__方法来添加了一个新的参数name
+    def __init__(self, name):
+        # super(MyThread, self).__init__()
+        # self.n = n
+
+        # 或者
+        # 调用父类Thread的构造方法，并将参数name传递给父类的构造方法来初始化线程对象的名称。
+        super().__init__(name=name)
 
     def run(self):
-        print("current task：", self.n)
+        print("current task：", self.name)
 
 
 if __name__ == "__main__":
