@@ -1,0 +1,17 @@
+//命令行生成sanmu_pb2.py
+//python -m grpc.tools.protoc --grpc_python_out=. --python_out=. --proto_path=. -I. --pyi_out=. sanmu.proto
+syntax = "proto3";
+
+service Sanmu{
+  rpc add(Request) returns (Response) {};
+}
+
+message Request {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message Response {
+  int32 c = 3;
+}
+
