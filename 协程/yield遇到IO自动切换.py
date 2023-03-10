@@ -4,7 +4,7 @@
 # File    : yield遇到IO自动切换.py
 # License : (C)Copyright Walter
 # Version : 1.0
-# Desc    :
+# Desc    : yield不能检测IO，实现遇到IO自动切换
 
 import time
 
