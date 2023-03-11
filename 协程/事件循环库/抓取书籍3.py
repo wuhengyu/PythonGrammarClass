@@ -73,6 +73,7 @@ async def main():
         for url in chapter_urls:
             task = asyncio.ensure_future(fetch_chapter(session, url))
             tasks.append(task)
+        # 用于等待所有异步任务完成，并将它们的结果合并到一个列表中
         chapters = await asyncio.gather(*tasks)
 
         folder_name = book_title.replace('/', ' ')  # 防止书名中的'/'对文件名的影响
