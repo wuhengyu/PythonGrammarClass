@@ -6,10 +6,12 @@
 # Version : 1.0
 # Desc    :
 
-# 下面是使用 `loop.create_task()` 函数创建 `Task` 对象的例子：
+
+# Python 代码能够利用异步 I/O 技术更高效地处理 I/O 密集型任务
 import asyncio
 
 
+# 下面是使用 `loop.create_task()` 函数创建 `Task` 对象的例子：
 async def coro():
     await asyncio.sleep(1)
     return 'hello'
