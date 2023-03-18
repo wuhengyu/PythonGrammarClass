@@ -24,8 +24,16 @@ async def coroutine2():
 async def main():
     task1 = asyncio.ensure_future(coroutine1())
     task2 = asyncio.ensure_future(coroutine2())
-    results = await asyncio.gather(task1, task2)
-    print(results)
+    results1 = await asyncio.gather(task1, task2)
+    print(results1)
+
+    # 或者
+
+    task3 = asyncio.ensure_future(coroutine1())
+    task4 = asyncio.ensure_future(coroutine2())
+    tasks = [task3, task4]
+    results2 = await asyncio.gather(*tasks)
+    print(results2)
 
 
 # loop = asyncio.get_event_loop()
