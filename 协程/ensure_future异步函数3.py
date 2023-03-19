@@ -17,6 +17,7 @@ async def coro():
 async def main():
     fut = asyncio.ensure_future(coro())
     # 使用asyncio.gather函数等待它的执行结果
+    # asyncio.gather可以接受元组参数，接受多个协程函数
     result = await asyncio.gather(fut)
     # 返回列表
     print(result)

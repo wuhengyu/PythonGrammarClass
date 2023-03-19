@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/2/17 18:52
 # @Author  : Walter
-# @File    : 输出内容.py
+# @File    : 不同输出方式.py
 # @License : (C)Copyright Walter
 # @Desc    :
 

@@ -10,7 +10,6 @@ import asyncio
 import concurrent.futures
 import time
 
-
 def blocking_io(n):
     print('Start blocking IO')
     time.sleep(n)

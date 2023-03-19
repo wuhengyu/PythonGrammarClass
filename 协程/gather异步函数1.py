@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Time    : 2023/3/17 22:42
 # Author  : Walter
-# File    : gather异步函数.py
+# File    : gather异步函数1.py
 # License : (C)Copyright Walter
 # Version : 1.0
 # Desc    : 用于等待多个协程并发执行，并在所有协程完成时返回它们的结果
