@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Time    : 2023/3/17 19:23
 # Author  : Walter
-# File    : 异步迭代器.py
+# File    : 使用异步迭代器.py
 # License : (C)Copyright Walter
 # Version : 1.0
 # Desc    :
