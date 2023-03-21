@@ -24,3 +24,6 @@ def outer_generator():
 
 for num in outer_generator():
     print(num)
+
+for num in nested_generator(5):
+    print(num)
