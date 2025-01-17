@@ -18,7 +18,7 @@ class Reverse:
         return self.__string[self.__index]
 
 
-# 没有设置遍历的终止条件，换句话说，没有对 __index 私有变量的值对限制，所有输出两遍
+# 没有设置遍历的终止条件，换句话说，没有对 __index 私有变量的值对限制，所以输出两遍
 revstr = Reverse('Python')
 for c in revstr:
     print(c, end=" ")

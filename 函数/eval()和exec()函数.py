@@ -17,6 +17,7 @@ a 为执行语句生成的变量
 # 参数 globals 作用域
 dic = {}  # 定义一个字典
 dic['b'] = 3  # 在 dic 中加一条元素，key 为 b
+# 打印出来的是一个字典视图对象，它代表字典 dic 中所有键的集合。
 print(dic.keys())  # 先将 dic 的 key 打印出来，有一个元素 b
 exec("a = 4", dic)  # 在 exec 执行的语句后面跟一个作用域 dic
 print(dic.keys())  # exec 后，dic 的 key 多了一个

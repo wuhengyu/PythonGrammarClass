@@ -13,13 +13,17 @@ def sum_numbers(*numbers):
     return total
 
 
-sum_numbers(1, 2, 3, 4)  # 返回 10
-sum_numbers(2, 4, 6)  # 返回 12
-sum_numbers()  # 返回 0
+# 10
+print(sum_numbers(1, 2, 3, 4))
+# 12
+print(sum_numbers(2, 4, 6))
+# 0
+print(sum_numbers())
 
 
 def merge_dicts(**dicts):
     result = {}
+    # dicts = {'a': {'x': 1, 'y': 2}, 'b': {'z': 3}}
     for d in dicts.values():
         if not isinstance(d, dict):
             raise TypeError('所有参数必须是字典！')
@@ -27,21 +31,22 @@ def merge_dicts(**dicts):
     return result
 
 
-merge_dicts(a={'x': 1, 'y': 2}, b={'z': 3})  # 返回 {'x': 1, 'y': 2, 'z': 3}
-merge_dicts(x={'a': 1}, y={'b': 2}, z={'c': 3})  # 返回 {'a': 1, 'b': 2, 'c': 3}
-merge_dicts()  # 返回 {}
+# {'x': 1, 'y': 2, 'z': 3}
+print(merge_dicts(a={'x': 1, 'y': 2}, b={'z': 3}))
+print(merge_dicts(x={'a': 1}, y={'b': 2}, z={'c': 3}))
+print(merge_dicts())
 
 
 def my_func(a, b, *args):
     print(a, b, args)
 
 
-my_func(1, 2)  # 输出 (1, 2, ())
-my_func(1, 2, 3, 4, 5)  # 输出 (1, 2, (3, 4, 5))
+print(my_func(1, 2))
+print(my_func(1, 2, 3, 4, 5))
 
 
 def my_func(a, b, **kwargs):
     print(a, b, kwargs)
 
 
-my_func(1, 2, x=3, y=4)  # 输出 (1, 2,
+print(my_func(1, 2, x=3, y=4))
